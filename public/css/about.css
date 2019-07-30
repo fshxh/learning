@@ -1,0 +1,353 @@
+html,
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.top-logo {
+    margin-left: 155px;
+    height: 57px;
+    margin-top: 5px;
+}
+
+.heading {
+    color: #333333;
+    margin-left: 60px;
+}
+
+.heading a {
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+    font-size: 16px;
+}
+
+.heading li a.active {
+    color: #118eea;
+    text-decoration: none;
+}
+
+.items {
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+    margin-top: 3px;
+    margin-right: 50px;
+}
+
+.items li {
+    margin: 15px;
+}
+
+.footer {
+    height: 270px;
+    background-color: #666666;
+}
+
+.container {
+    margin-top: 160px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container p {
+    width: 119px;
+    margin-top: 100px;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.container p:last-child {
+    margin-right: 0;
+}
+
+.link {
+    margin-bottom: 72px;
+    text-decoration: underline;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.item2 {
+    margin-top: 1px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container-top {
+    width: 100%;
+    border: solid 0px #e5e5e5;
+    background-image: url("./../images/pic.png");
+    background-size: 621px 440px;
+    background-position: 92% -1%;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    position: relative;
+}
+
+.text1 {
+    margin-left: 100px;
+    margin-top: 0px;
+    width: 597px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #666666;
+    text-indent: 2em;
+}
+
+.text1 p {
+    margin: 0;
+}
+
+.text-top {
+    white-space: nowrap;
+    display: flex;
+    text-indent: 0em;
+    margin: 0px;
+}
+
+.text-head1 {
+    font-family: SourceHanSansCN-Medium;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-right: 30px;
+    margin-left: 100px;
+}
+
+.text-head2 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #118eea;
+    opacity: 0.5;
+    padding: 21px 0px;
+}
+
+.container-pic {
+    display: flex;
+    margin: 70px auto;
+    margin-left: -52px;
+}
+
+.container-items {
+    margin: -7px;
+}
+
+.container-top .container-pic .item-1:hover::before {
+    content: '';
+    width: 21%;
+    height: 18%;
+    position: absolute;
+    background-image: url("./../images/about/about_feature_item_hover_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-top .container-pic .item-2:hover::before {
+    content: '';
+    width: 21%;
+    height: 18%;
+    position: absolute;
+    background-image: url("./../images/about/about_feature_item_hover_2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-top .container-pic .item-3:hover::before {
+    content: '';
+    width: 21%;
+    height: 18%;
+    position: absolute;
+    background-image: url("./../images/about/about_feature_item_hover_3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-top .container-pic .item-4:hover::before {
+    content: '';
+    width: 21%;
+    height: 18%;
+    position: absolute;
+    background-image: url("./../images/about/about_feature_item_hover_4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-top .container-pic .item:hover {
+    cursor: pointer;
+}
+
+.blue-box {
+    background-image: url("./../images/count_bg.png");
+    background-position: center;
+    background-size: cover;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    height: 0;
+    padding-bottom: 22%;
+    opacity: 0.9;
+    position: relative;
+}
+
+.blue-box .content-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.blue-box .box-item {
+    display: inline-block;
+    color: #ffffff;
+    margin-bottom: 74px;
+    padding-left: 156px;
+    padding-top: 150px;
+}
+
+.blue-box .box-item .num {
+    font-size: 60px;
+    line-height: 75px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.blue-box .box-item .box-text {
+    font-size: 20px;
+    line-height: 75px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: -160px;
+}
+
+.box-partner {
+    background-image: url("./../images/partner_title_bg.png");
+    width: 291px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box-word {
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: -35px;
+    line-height: 50px;
+}
+
+.case-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.item-img1 {
+    margin: 20px;
+    margin-left: 70px;
+    width: 181px;
+}
+
+.item-img2 {
+    margin: 20px;
+    margin-left: 86px;
+    width: 163px;
+    height: 163px;
+    margin-top: 50px;
+}
+
+.item-img3 {
+    margin: 20px;
+    margin-left: 60px;
+    width: 195px;
+    height: 169px;
+    margin-top: 50px;
+}
+
+.item-img4 {
+    margin: 20px;
+    margin-left: 55px;
+    width: 200px;
+    margin-top: 87px;
+}
+
+.item-img5 {
+    margin: 20px;
+    margin-left: 55px;
+    width: 200px;
+    margin-top: 87px;
+}
+
+.item-img6 {
+    margin: 20px;
+    margin-left: 62px;
+    width: 198px;
+    margin-top: 36px;
+    height: 170px;
+}
+
+.item-img7 {
+    margin: 20px;
+    margin-left: 55px;
+    width: 198px;
+    margin-top: 65px;
+}
+
+.box-about {
+    background-image: url("./../images/about/about_contact_title_bg.png");
+    height: 50px;
+    width: 291px;
+    text-align: center;
+    margin: 150px auto;
+    background-repeat: no-repeat;
+}
+
+.contact {
+    display: flex;
+    margin-bottom: -40px;
+}
+
+.contact-logo1 {
+    background-color: #118eea;
+    border: solid 12px #118eea;
+    border-radius: 85%;
+    margin-left: 100px;
+    height: 20px;
+}
+
+.contact-logo2 {
+    background-color: #118eea;
+    border: solid 13px #118eea;
+    border-radius: 87%;
+    margin-left: 120px;
+    height: 20px;
+}
+
+.contact-logo3 {
+    background-color: #118eea;
+    border: solid 13px #118eea;
+    border-radius: 87%;
+    margin-left: 120px;
+    height: 20px;
+}
+
+.contact p {
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #333333;
+    margin-top: 7px;
+    margin-left: 5px;
+}

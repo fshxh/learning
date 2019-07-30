@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../site/public/css/explain.css">
+    <script src="../vue/public/vue.js"></script>
+</head>
+<div id="root">
+    <div class="header">
+        <img class="top-logo" src="./public/images/logo.png">
+        <div class="heading">
+            <ul class="items">
+                <li v-for="(item, index2) in top " v-on:click="change2(index2, item.href) "><a :class="{active: index2===currentIndex2} ">{{item.name}}</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cointainer">
+        <img class="img1" src="./public/images/4/case_cover.png" width="100%">
+        <img class="img2" src="./public/images/4/case_content.png" width="100%">
+    </div>
+
+    <div class="footer ">
+        <div class="container ">
+            <p>服务项目</p>
+            <p>服务案例</p>
+            <p>加入我们</p>
+            <p>关于小包子</p>
+        </div>
+        <p class="item2 ">COPYRIGHT © 2002-2019 333F.COM.INC.ALL RIGHTS RESERVED. 粤ICP备10217460号</p>
+
+        <p class="item2 "><a class="link" href="http://www.333f.com ">友情链接： 广州市三川田文化科技股份有限公司</a></p>
+    </div>
+</div>
+<script>
+    var title2 = new Vue({
+        el: '#root',
+        data: {
+            top: [{
+                name: '首页',
+                href: 'index.html'
+            }, {
+                name: '服务项目',
+                href: 'service.html'
+
+            }, {
+                name: '服务案例',
+                href: 'example.html'
+
+            }, {
+                name: '加入我们',
+                href: 'joinus1.html'
+
+            }, {
+                name: '关于我们',
+                href: 'index.html'
+
+            }, {
+                name: '移动端'
+
+
+            }, ],
+            currentIndex2: 2,
+
+        },
+        methods: {
+
+            change2(index2, href) {
+                this.currentIndex2 = index2
+                console.log(href)
+                location.href = href
+            }
+        }
+    })
+</script>
+
+<body>
+
+</body>
+
+</html>

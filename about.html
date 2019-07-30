@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于我们</title>
+    <script src="../vue/public/vue.js"></script>
+    <link rel="stylesheet" href="../site/public/css/about.css">
+</head>
+
+<body>
+    <div id="root">
+        <div class="header">
+            <img class="top-logo" src="./public/images/logo.png">
+            <div class="heading">
+                <ul class="items">
+                    <li v-for="(item, index2) in top " v-on:click="change2(index2, item.href) "><a :class="{active: index2===currentIndex2} ">{{item.name}}</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <img src="../site/public/images/about/about_cover.png" width="100%">
+        </div>
+        <div class="container-top">
+
+            <div class="text-top">
+                <p class="text-head1">关于我们 </p>
+
+                <p class="text-head2"> ABOUT US</p>
+            </div>
+            <div class="text1">
+                <p>小包子品牌管家是广州市三川田文化科技股份公司旗下创新产 品平台，以图文设计、方案策划、公众号运维等品牌服务为核心， 致力于为客户提供高效、优质、便捷的一站式企业品牌服务平台。 为每一个位客户提供一对一的管家式服务，覆盖售前需求收集、F设 我们计制作过程跟进、验收交付把关、订单维护；我们有经验
+                    <p>丰富的销售人员，技术过硬的设计与策售后划团队，努力让每一个 服务订单都能获得客户认可与赞赏；我们已经累计服务中国海关、 中国电信、碧桂园、优托邦、广州购书中心、等100+企业团体。
+                    </p>
+                </p>
+                <p>小包子品牌管家，让品牌服务变得简单！</p>
+                <div>
+                </div>
+
+                <div class="container-pic">
+                    <div class="item-1"><img class="container-items" src="../site/public/images/about/about_feature_item_1.png" height="280px" width="300px"></div>
+                    <div class="item-2"><img class="container-items" src="../site/public/images/about/about_feature_item_2.png" height="280px" width="300px"></div>
+                    <div class="item-3"><img class="container-items" src="../site/public/images/about/about_feature_item_3.png" height="280px" width="300px"></div>
+                    <div class="item-4"><img class="container-items" src="../site/public/images/about/about_feature_item_4.png" height="280px" width="300px"></div>
+
+                </div>
+
+            </div>
+            <div class="blue-box">
+                <div class="content-box">
+
+                    <div class="box-item ">
+                        <p class="num ">19年</p>
+                        <p class="box-text ">行业经验积累</p>
+                    </div>
+                    <div class="box-item ">
+                        <p class="num ">3000+</p>
+                        <p class="box-text ">服务案例总数</p>
+                    </div>
+                    <div class="box-item ">
+                        <p class="num ">200+</p>
+                        <p class="box-text ">服务品牌总数</p>
+                    </div>
+                    <div class="box-item ">
+                        <p class="num ">200+</p>
+                        <p class="box-text ">平台服务项目总数</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="box-partner">
+                <p class="box-word">合作伙伴（部分）</p>
+            </div>
+            <div class="case-container ">
+                <div><img class="item-img1 " src="./public/images/partner_item_1.png "></div>
+                <div><img class="item-img1 " src="./public/images/partner_item_2.png "></div>
+                <div><img class="item-img1 " src="./public/images/partner_item_3.png "></div>
+                <div><img class="item-img1 " src="./public/images/partner_item_4.png "></div>
+                <div><img class="item-img1 " src="./public/images/partner_item_5.png "></div>
+                <div><img class="item-img2 " src="./public/images/partner_item_6.png "></div>
+                <div><img class="item-img2 " src="./public/images/partner_item_7.png "></div>
+                <div><img class="item-img2 " src="./public/images/partner_item_8.png "></div>
+                <div><img class="item-img2 " src="./public/images/partner_item_9.png "></div>
+                <div><img class="item-img2 " src="./public/images/partner_item_10.png "></div>
+                <div><img class="item-img3 " src="./public/images/about/about_partner_item_3_1.png"></div>
+                <div><img class="item-img3 " src="./public/images/about/about_partner_item_3_2.png "></div>
+                <div><img class="item-img4" src="./public/images/about/about_partner_item_3_3.png "></div>
+                <div><img class="item-img4" src="./public/images/about/about_partner_item_3_4.png "></div>
+                <div><img class="item-img4" src="./public/images/about/about_partner_item_3_5.png "></div>
+                <div><img class="item-img5 " src="./public/images/about/about_partner_item_4_1.png"></div>
+                <div><img class="item-img5 " src="./public/images/about/about_partner_item_4_2.png "></div>
+                <div><img class="item-img6" src="./public/images/about/about_partner_item_4_3.png "></div>
+                <div><img class="item-img7" src="./public/images/about/about_partner_item_4_4.png "></div>
+                <div><img class="item-img6" src="./public/images/about/about_partner_item_4_5.png "></div>
+            </div>
+            <div class="box-about">
+                <p class="box-word">联系我们</p>
+            </div>
+            <div class="contact">
+                <div class="contact-logo1"> <img src="./../site/public/images/about/about_location_icon.png">
+
+                </div>
+                <p>广州市萝岗区科学城科汇四街5号301-B号</p>
+                <div class="contact-logo2"> <img src="./../site/public/images/about/about_phone_icon.png">
+
+                </div>
+                <p>400-889-1113</p>
+                <div class="contact-logo3"> <img src="./../site/public/images/about/about_email_icon.png">
+
+                </div>
+                <p>zhangxilin@333f.com</p>
+            </div>
+            <div class="footer ">
+                <div class="container ">
+                    <p>服务项目</p>
+                    <p>服务案例</p>
+                    <p>加入我们</p>
+                    <p>关于小包子</p>
+                </div>
+                <p class="item2 ">COPYRIGHT © 2002-2019 333F.COM.INC.ALL RIGHTS RESERVED. 粤ICP备10217460号</p>
+
+                <p class="item2 "><a class="link " href="http://www.333f.com ">友情链接： 广州市三川田文化科技股份有限公司</a></p>
+            </div>
+
+
+        </div>
+</body>
+<script>
+    var title2 = new Vue({
+        el: '#root',
+        data: {
+            top: [{
+                name: '首页',
+                href: 'index.html'
+            }, {
+                name: '服务项目',
+                href: 'service.html'
+
+            }, {
+                name: '服务案例',
+                href: 'example.html'
+
+            }, {
+                name: '加入我们',
+                href: 'joinus1.html'
+
+            }, {
+                name: '关于我们',
+                href: 'about.html'
+
+            }, {
+                name: '移动端'
+
+
+            }, ],
+            currentIndex2: 4,
+
+        },
+        methods: {
+
+            change2(index2, href) {
+                this.currentIndex2 = index2
+                console.log(href)
+                location.href = href
+            }
+        }
+    })
+</script>
+
+</html>

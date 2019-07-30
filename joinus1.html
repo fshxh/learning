@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>加入我们</title>
+    <link rel="stylesheet" href="../site/public/css/joinus1.css">
+    <script src="../vue/public/vue.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <div class="header">
+            <img class="top-logo" src="./public/images/logo.png">
+            <div class="heading">
+                <ul class="items">
+                    <li v-for="(item, index2) in top " v-on:click="change2(index2, item.href) "><a :class="{active: index2===currentIndex2} ">{{item.name}}</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cover">
+            <img src="../site/public/images/join_cover.png" width="100%">
+        </div>
+        <div class="taps">
+            <ul class="taps-items">
+                <li v-for="(item, index) in taps " v-on:click="change(index, item.href) "><a :class="{active: index===currentIndex} ">{{item.name}}</a> </li>
+            </ul>
+
+        </div>
+
+
+        <div class="container-middle ">
+            <div class="bottom ">
+                <div class="innerPicture1">
+
+                </div>
+                <img class="picture1" src="../site/public/images/join_brand_minicode.png">
+                <div class="middle-top">
+                    <div class="text1">
+                        <p>扫一扫二维码</p>
+                        <p>注册成为小包子品牌管家</p>
+                    </div>
+                    <div class="text2">
+                        <p>小包子品牌管家是广州市三川田文化科技股份公司 旗下创新产品平台，以图文设计、方案策划、公众号运 维等品牌服务为核心，致力于为客户提供高效、优质、 便捷的一站式企业品牌服务平台。为每一个位客户提供 一对一的管家式服务，覆盖售前需求收集。</p>
+                        <p>小包子品牌管家是广州市三川田文化科技股份公司 旗下创新产品平台，以图文设计、方案策划、公众号运 维等品牌服务为核心，致力于为客户提供高效、优质、 便捷的一站式企业品牌服务平台。为每一个位客户提供 一对一的管家式服务，覆盖售前需求收集。
+                        </p>
+                        <p>小包子品牌管家是广州市三川田文化科技股份公司 旗下创新产品平台，以图文设计、方案策划、公众号运 维等品牌服务为核心，致力于为客户提供高效、优质、 便捷的一站式企业品牌服务平台。为每一个位客户提供 一对一的管家式服务，覆盖售前需求收集。
+                        </p>
+                    </div>
+                </div>
+                <div class="innerPicture2">
+                    <img class="picture2 " src="../site/public/images/join_brand_flow.png ">
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="footer ">
+            <div class="container-foot ">
+                <p>服务项目</p>
+                <p>服务案例</p>
+                <p>加入我们</p>
+                <p>关于小包子</p>
+            </div>
+            <p class="foot-item ">COPYRIGHT © 2002-2019 333F.COM.INC.ALL RIGHTS RESERVED. 粤ICP备10217460号</p>
+            <p class="foot-item "><a class="link " href="http://www.333f.com ">友情链接： 广州市三川田文化科技股份有限公司</a></p>
+        </div>
+    </div>
+    <script>
+        var title2 = new Vue({
+            el: '#root',
+            data: {
+                top: [{
+                    name: '首页',
+                    href: 'index.html'
+                }, {
+                    name: '服务项目',
+                    href: 'service.html'
+
+                }, {
+                    name: '服务案例',
+                    href: 'example.html'
+
+                }, {
+                    name: '加入我们',
+                    href: 'joinus1.html'
+
+                }, {
+                    name: '关于我们',
+                    href: 'about.html'
+
+                }, {
+                    name: '移动端'
+
+
+                }, ],
+                currentIndex2: 3,
+                taps: [{
+                        name: '小包子品牌管家中心',
+                        href: 'joinus1.html'
+
+                    }, {
+                        name: '小包子技术管家',
+                        href: 'joinus2.html'
+
+                    }, {
+                        name: '小包子超级用户',
+                        href: 'joinus3.html'
+
+                    },
+
+
+                ],
+                currentIndex: 0,
+
+            },
+            methods: {
+
+                change2(index2, href) {
+                    this.currentIndex2 = index2
+                    console.log(href)
+                    location.href = href
+                },
+                change(index, href) {
+                    this.currentIndex = index
+                    console.log(href)
+                    location.href = href
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+html,
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.top-logo {
+    margin-left: 155px;
+    height: 57px;
+    margin-top: 5px;
+}
+
+.heading {
+    color: #333333;
+    margin-left: 60px;
+}
+
+.heading a {
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+    font-size: 16px;
+}
+
+.heading li a.active {
+    color: #118eea;
+}
+
+.items {
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+    margin-top: 3px;
+    margin-right: 50px;
+}
+
+.items li {
+    margin: 15px;
+}
+
+.cointainer {
+    margin-top: 0px;
+}
+
+.searcher-border {
+    padding: 0 230px;
+    border-top: solid 0px;
+    border-bottom: solid 1px #e5e5e5;
+    height: 80px;
+}
+
+.searcher {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.searcher input {
+    background-image: url("../images/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    margin-top: 1px;
+    margin-left: 50px;
+    height: 45px;
+    width: 662px;
+    font-size: 20px;
+    outline: none;
+    flex: 1;
+    border: solid 1px #e5e5e5;
+    padding-left: 40px;
+    border-radius: 8px;
+}
+
+.searcher input:focus {
+    /* border: 1px solid #118eea; */
+    box-shadow: inset 0 1px 2px rgba(27, 31, 35, .075), 0 0 0 0.1em rgba(3, 102, 214, .3);
+}
+
+.btc {
+    width: 200px;
+    height: 50px;
+    background-color: #118eea;
+    border-radius: 4px;
+    color: #e5e5e5;
+    white-space: nowrap;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.ul1 {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
+    justify-content: center;
+    padding: 5px 265px;
+}
+
+.ul2 {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
+    justify-content: left;
+    width: 766px;
+    margin-top: 0px;
+}
+
+li {
+    font-size: 16px;
+    color: black;
+    margin: 15px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.content {
+    margin: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.title {
+    color: #666666;
+    font-size: 18px;
+    display: inline-block;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.design1 {
+    font-size: 16px;
+    color: black;
+    line-height: 3px;
+}
+
+.content2 .word {
+    font-size: 24px;
+    color: #333333;
+    position: absolute;
+    white-space: nowrap;
+    margin: 24px -45px;
+}
+
+.content2 {
+    margin-top: 0px;
+    text-align: center;
+    display: inline-block;
+}
+
+.content2 .item:hover::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./../images/case_hover_icon.png");
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(17, 142, 234, 0.5)
+}
+
+.container3 {
+    margin-top: 180px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container3 p {
+    margin-top: 100px;
+    width: 119px;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.container3 a {
+    display: inline-block;
+}
+
+.container3 p:last-child {
+    margin-right: 0;
+}
+
+.item {
+    margin: 85px;
+    position: relative;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+.link {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.item2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.footer {
+    margin-top: 100px;
+    height: 270px;
+    background-color: #666666;
+}
+
+.linking {
+    color: #ffffff;
+    text-align: 14px;
+}
+
+.cointainer-color {
+    color: #ffffff;
+}
+
+.container2 li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+}
+
+.container2 li a.active {
+    color: #118eea;
+}
+
+.content-color {
+    color: #ffffff;
+}
+
+.content li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+}
+
+.content li a.active {
+    color: #118eea;
+}

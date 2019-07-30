@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../site/public/css/example.css">
+    <script src="../vue/public/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="root">
+        <div class="header">
+            <img class="top-logo" src="./public/images/logo.png">
+            <div class="heading">
+                <ul class="items">
+                    <li v-for="(item, index2) in top " v-on:click="changeTop(index2, item.href) "><a :class="{active: index2===currentIndex2} ">{{item.name}}</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cointainer">
+            <img src="./public/images/2-服务项目-assets/goods_cover.png" width="100%">
+
+        </div>
+        <div class="searcher-border">
+            <div class="searcher">
+                <input placeholder="请输入服务名称 ">
+                <button class="btc ">搜索服务</button>
+
+            </div>
+        </div>
+
+        <div class="container2 ">
+            <ul class="ul1">
+                <li v-for="(item, index) in list " v-on:click="change(index) "><a :class="{active: index===currentIndex} ">{{item}}</a> </li>
+            </ul>
+        </div>
+        <div class="content ">
+
+            <p class="title ">行业分类：</p>
+            <ul2 class="ul2">
+                <li class="design1" v-for="(item,index3) in items " class="design1" v-on:click="change2(index3) "><a :class="{active: index3===currentIndex3} ">{{item}}</a> </li>
+            </ul2>
+
+
+        </div>
+        <div class="content2 ">
+            <div class="item "><img src="../site/public/images/4/case_sample_item_1.png ">
+                <a class="word ">深圳汇邦</a>
+            </div>
+            <div class="item "><img src="../site/public/images/4/case_sample_item_2.png ">
+                <a class="word " href="explain.html ">穗台e家</a>
+            </div>
+            <div class="item "><img src="../site/public/images/4/case_sample_item_3.png ">
+                <a class="word ">中臣碧阳</a>
+            </div>
+            <div class="item "><img src="../site/public/images/4/case_sample_item_4.png ">
+                <a class="word ">云之客服务云</a>
+            </div>
+            <div class="item "><img src="../site/public/images/4/case_sample_item_5.png ">
+                <a class="word ">广益联募</a>
+            </div>
+            <div class="item "><img src="../site/public/images/4/case_sample_item_6.png ">
+                <a class="word ">顺德优品</a>
+            </div>
+
+        </div>
+        <div class="footer ">
+            <div class="container3 ">
+                <p>服务项目</p>
+                <p>服务案例</p>
+                <p>加入我们</p>
+                <p>关于小包子</p>
+            </div>
+            <p class="item2 ">COPYRIGHT © 2002-2019 333F.COM.INC.ALL RIGHTS RESERVED. 粤ICP备10217460号</p>
+
+            <p class="link "><a class="linking " href="http://www.333f.com ">友情链接： 广州市三川田文化科技股份有限公司</a></p>
+        </div>
+
+    </div>
+
+    <script>
+        var title2 = new Vue({
+            el: '#root',
+            data: {
+                top: [{
+                    name: '首页',
+                    href: 'index.html'
+                }, {
+                    name: '服务项目',
+                    href: 'service.html'
+
+                }, {
+                    name: '服务案例',
+                    href: 'example.html'
+
+                }, {
+                    name: '加入我们',
+                    href: 'joinus1.html'
+
+                }, {
+                    name: '关于我们',
+                    href: 'index.html'
+
+                }, {
+                    name: '移动端'
+
+
+                }, ],
+                currentIndex2: 2,
+                list: [
+                    '精选',
+                    '品牌设计',
+                    '品牌策划',
+                    '效果图',
+                    '数字模型',
+                    '视觉影视',
+                    '软件平台',
+                    '新媒体',
+                    '互动展项',
+                    '展览展示',
+                    '包子优选',
+                    '国际进驻',
+                    '媒体推广',
+                    '展厅运维'
+                ],
+                currentIndex: Node,
+                items: [
+                    'PPT设计', '来宾证/访客证设计', '工作证（识别卡）设计', '档案袋设计', '文件夹设计', '便籤设计', '横幅设计', '信纸设计', '封面设计', '企业VI形象设计', '网页banner图优化', '漫画绘画', '纸杯设计', '名片设计', '数据信息图表设计', '画册/刊物设计', 'DM/单张设计', '活动T恤设计', 'UI设计: APP、网页、触摸屏、系统', '产品说明牌设计', '手提袋设计', '宣传折页设计', '易拉宝/X展架设计', '展板设计', '海报设计', '户外平面广告设计', '产品标识（LOGO）设计'
+                ],
+                currentIndex3: Node,
+            },
+            methods: {
+                change(index) {
+                    console.log('@change ', index)
+                    this.currentIndex = index
+                },
+                change2(index3) {
+                    console.log('@change ', index3)
+                    this.currentIndex3 = index3
+                },
+                changeTop(index2, href) {
+                    this.currentIndex2 = index2
+                    console.log(href)
+                    location.href = href
+                }
+            },
+        })
+    </script>
+
+</body>
+
+</html>

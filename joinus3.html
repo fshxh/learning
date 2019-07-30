@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>加入我们</title>
+    <link rel="stylesheet" href="../site/public/css/joinus3.css">
+    <script src="../vue/public/vue.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <div class="header">
+            <img class="top-logo" src="./public/images/logo.png">
+            <div class="heading">
+                <ul class="items">
+                    <li v-for="(item, index2) in top " v-on:click="change2(index2, item.href) "><a :class="{active: index2===currentIndex2} ">{{item.name}}</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cover">
+            <img src="../site/public/images/join_cover.png" width="100%">
+        </div>
+        <div class="taps">
+            <ul class="taps-items">
+                <li v-for="(item, index) in taps " v-on:click="change(index, item.href) "><a :class="{active: index===currentIndex} ">{{item.name}}</a> </li>
+            </ul>
+        </div>
+        <div class="container-middle">
+            <div class="top">
+                <div class="containers">
+
+                    <p class="text">小包子品牌管家面向广大注册用户推出超级用户活动，成为小包子超级用户即 可享受超级用户下单优惠折扣，推荐用户下单还可每单赚佣金，收益无上限。
+                    </p> <img class="container-pic" src="../site/public/images/join_super_item1.png">
+                </div>
+                <div class="containers">
+
+                    <p class="text">推荐注册小包子品牌管家的用户内超过10人完成下单且支付成功，即可自动升级为超级用户。
+                    </p> <img class="container-pic2" src="../site/public/images/join_super_item2.png">
+                </div>
+
+            </div>
+            <div class="top2">
+                <div class="containers2">
+
+                    <p class="text">超级用户等级划分，超级用户下单享受折扣优惠，以及获得佣金比例详情如下：
+                    </p>
+                    <table class="context" cellpadding="0" cellspacing="1">
+                        <tr class="table1">
+                            <td>
+                                等级
+                            </td>
+                            <td>
+                                被推荐用户单数
+                            </td>
+                            <td>
+                                享受服务折扣
+                            </td>
+                            <td>
+                                获得佣金比例
+                            </td>
+                        </tr>
+                        <tr class="table2">
+                            <td>
+                                一级
+                            </td>
+                            <td>
+                                11-20
+                            </td>
+                            <td>
+                                98折
+                            </td>
+                            <td>
+                                1%
+                            </td>
+                        </tr>
+                        <tr class="table1">
+                            <td>
+                                二级
+                            </td>
+                            <td>
+                                21-30
+                            </td>
+                            <td>
+                                95折
+                            </td>
+                            <td>
+                                2%
+                            </td>
+                        </tr>
+                        <tr class="table2">
+                            <td>
+                                三级
+                            </td>
+                            <td>
+                                31-40
+                            </td>
+                            <td>
+                                90折
+                            </td>
+                            <td>
+                                3%
+                            </td>
+                        </tr>
+                        <tr class="table1">
+                            <td>
+                                四级
+                            </td>
+                            <td>
+                                41-50
+                            </td>
+                            <td>
+                                85折
+                            </td>
+                            <td>
+                                4%
+                            </td>
+                        </tr>
+                        <tr class="table2">
+                            <td>
+                                五级
+                            </td>
+                            <td>
+                                >=50
+                            </td>
+                            <td>
+                                80折
+                            </td>
+                            <td>
+                                5%
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class=" containers2 ">
+                    <p class="text2 ">超级用户还将获得小包子品牌管家提供的，24小时响应，一对一的品牌管家服务。
+                    </p>
+                    <img class="container2-pic" src="../site/public/images/join_super_item4.png ">
+
+                </div>
+
+
+                <div class="bottom-taps">
+                    <img class="bottom-pic" src="../site/public/images/join_super_minicode.png">
+                    <p class="bottom-text">查看小包子超级用户活动</p>
+                    <p class="bottom-text">扫一扫二维码</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer ">
+            <div class="container-foot ">
+                <p>服务项目</p>
+                <p>服务案例</p>
+                <p>加入我们</p>
+                <p>关于小包子</p>
+            </div>
+            <p class="foot-item ">COPYRIGHT © 2002-2019 333F.COM.INC.ALL RIGHTS RESERVED. 粤ICP备10217460号</p>
+            <p class="foot-item "><a class="link " href="http://www.333f.com ">友情链接： 广州市三川田文化科技股份有限公司</a></p>
+        </div>
+    </div>
+    <script>
+        var title2 = new Vue({
+            el: '#root',
+            data: {
+                top: [{
+                    name: '首页',
+                    href: 'index.html'
+                }, {
+                    name: '服务项目',
+                    href: 'service.html'
+
+                }, {
+                    name: '服务案例',
+                    href: 'example.html'
+
+                }, {
+                    name: '加入我们',
+                    href: 'joinus1.html'
+
+                }, {
+                    name: '关于我们',
+                    href: 'about.html'
+
+                }, {
+                    name: '移动端'
+
+
+                }, ],
+                currentIndex2: 3,
+                taps: [{
+                        name: '小包子品牌管家中心',
+                        href: 'joinus1.html'
+
+                    }, {
+                        name: '小包子技术管家',
+                        href: 'joinus2.html'
+
+                    }, {
+                        name: '小包子超级用户',
+                        href: 'joinus3.html'
+
+                    },
+
+
+                ],
+                currentIndex: 2,
+
+            },
+            methods: {
+
+                change2(index2, href) {
+                    this.currentIndex2 = index2
+                    console.log(href)
+                    location.href = href
+                },
+                change(index, href) {
+                    this.currentIndex = index
+                    console.log(href)
+                    location.href = href
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
