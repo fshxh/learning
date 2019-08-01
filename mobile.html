@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>mobile</title>
-    <link rel="stylesheet" href="./public/css/style.css">
+
     <link rel="stylesheet" href="./public/css/swiper.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/mobile.css">
@@ -21,53 +21,115 @@
                 <ul class="items">
                     <li v-for="(item, index2) in top " v-on:click="change2(index2, item.href) "><a :class="{active: index2===currentIndex2} ">{{item.name}}</a> </li>
                 </ul>
-            </div>
-        </div>
-        <div class="b1">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="pic" src="./public/images/a.jpg" width="100%">
-                    </div>
-                    <div class="swiper-slide ">
-                        <img class="pic" src=".//public/images/slide_item_2.png " width="100%">
+                <div class="dropdown">
+                    <img class="dropbtn"></img>
+                    <div class="dropdown-content">
+                        <div class="drop1">
+                            <div class="text">
+                                <p>用户端
+                                </p>
+                                <p>小程序二维码</p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="drop2">
+                            <div class="text">
+                                <p>品牌管家端
+                                </p>
+                                <p>小程序二维码</p>
+                            </div>
+                        </div>
+                        <div class="drop3">
+                            <div class="text">
+                                <p>技术管家端
+                                </p>
+                                <p>小程序二维码</p>
+                            </div>
+                        </div>
+                        <div class="drop4">
+                            <div class="text">
+                                <p>公众号
+                                </p>
+                                <p>二维码</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-pagination "></div>
-                <div class="swiper-button-prev m-prev "></div>
-                <div class="swiper-button-next m-next "></div>
-
-
             </div>
         </div>
-        <div class="inner2">
-            <div class="b8 ">
-                <p class="n7 ">热门服务</p>
+    </div>
+    <div class="head-pic">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="pic" src="./public/images/a.jpg" width="100%">
+                </div>
+                <div class="swiper-slide ">
+                    <img class="pic" src=".//public/images/slide_item_2.png " width="100%">
+                </div>
             </div>
-            <div class="column ">
-                <img src="./public/images/1.jpg">
-                <p class="column2 ">品牌设计</p>
-                <p>描述描述描述描述述描述描</p>
-            </div>
-            <div class="column ">
-                <img src="./public/images/2.jpg ">
-                <p class="column2 ">品牌策划</p>
-                <p>描述述描述描描述述描述描</p>
-            </div>
-            <div class="column ">
-                <img src="./public/images/2.jpg ">
-                <p class="column2 ">新媒体</p>
-                <p>描述描述描述描述述描述描</p>
-            </div>
-            <div class="column ">
-                <img src="./public/images/4.jpg ">
-                <p class="column2 ">视觉影视</p>
-                <p>描述描述描述描述述描述描</p>
-            </div>
+            <div class="swiper-pagination "></div>
+            <div class="swiper-button-prev m-prev "></div>
+            <div class="swiper-button-next m-next "></div>
+
 
         </div>
     </div>
+    <div class="inner2">
+        <div class="b8 ">
+            <p class="n7 ">热门服务</p>
+        </div>
+        <div class="column ">
+            <img src="./public/images/1.jpg">
+            <p class="column2 ">品牌设计</p>
+            <p>描述描述描述描述述描述描</p>
+        </div>
+        <div class="column ">
+            <img src="./public/images/2.jpg ">
+            <p class="column2 ">品牌策划</p>
+            <p>描述述描述描描述述描述描</p>
+        </div>
+        <div class="column ">
+            <img src="./public/images/2.jpg ">
+            <p class="column2 ">新媒体</p>
+            <p>描述描述描述描述述描述描</p>
+        </div>
+        <div class="column ">
+            <img src="./public/images/4.jpg ">
+            <p class="column2 ">视觉影视</p>
+            <p>描述描述描述描述述描述描</p>
+        </div>
+
+    </div>
+    </div>
 </body>
+<script src=".//public/js/swiper.min.js ">
+</script>
+<script src=" https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+    window.onload = function() {
+        var mySwiper = new Swiper('.swiper-container', {
+
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                a: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+
+        })
+    }
+</script>
 <script>
     var title2 = new Vue({
         el: '#root',

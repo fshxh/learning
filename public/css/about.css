@@ -149,7 +149,7 @@ body {
 .container-top .container-pic .item-1:hover::before {
     content: '';
     width: 21%;
-    height: 18%;
+    height: 9%;
     position: absolute;
     background-image: url("./../images/about/about_feature_item_hover_1.png");
     background-repeat: no-repeat;
@@ -159,7 +159,7 @@ body {
 .container-top .container-pic .item-2:hover::before {
     content: '';
     width: 21%;
-    height: 18%;
+    height: 9%;
     position: absolute;
     background-image: url("./../images/about/about_feature_item_hover_2.png");
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ body {
 .container-top .container-pic .item-3:hover::before {
     content: '';
     width: 21%;
-    height: 18%;
+    height: 9%;
     position: absolute;
     background-image: url("./../images/about/about_feature_item_hover_3.png");
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@ body {
 .container-top .container-pic .item-4:hover::before {
     content: '';
     width: 21%;
-    height: 18%;
+    height: 9%;
     position: absolute;
     background-image: url("./../images/about/about_feature_item_hover_4.png");
     background-repeat: no-repeat;

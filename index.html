@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -41,7 +41,10 @@
             </div>
         </div>
         <div class="inner2">
-            <h2 class="F2 ">热门服务</h2>
+            <div class="b8 ">
+                <p class="n7 ">热门服务</p>
+            </div>
+
             <div class="column ">
                 <img src="./public/images/1.jpg">
                 <p class="column2 ">品牌设计</p>
@@ -62,10 +65,10 @@
                 <p class="column2 ">视觉影视</p>
                 <p>描述描述描述描述述描述描</p>
             </div>
+
             <div class="b2 ">
-                <img class="pic" src="./public/images/case_title_bg.png ">
                 <a class="n3 ">精品案例</a>
-                <a class="n4 ">我们提供品牌设计及品牌策划等服务</a>
+                <p class="n4 ">我们提供品牌设计及品牌策划等服务</p>
             </div>
         </div>
         <div class="b3">
@@ -107,23 +110,23 @@
             </div>
         </div>
 
-        <div class="blue-box">
+        <div class="blue-box" id="numer">
             <div class="content-box">
 
                 <div class="box-item ">
-                    <p class="num ">19年</p>
+                    <p id="year">19+</p>
                     <p class="box-text ">行业经验积累</p>
                 </div>
                 <div class="box-item ">
-                    <p class="num ">3000+</p>
+                    <p id="caseSum">3000+</p>
                     <p class="box-text ">服务案例总数</p>
                 </div>
                 <div class="box-item ">
-                    <p class="num ">200+</p>
+                    <p id="brand">200+</p>
                     <p class="box-text ">服务品牌总数</p>
                 </div>
                 <div class="box-item ">
-                    <p class="num ">200+</p>
+                    <p id="brandSum">200+</p>
                     <p class="box-text ">平台服务项目总数</p>
                 </div>
             </div>
@@ -182,6 +185,10 @@
 </script>
 <script src=" https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
+    // var numBox = document.getElementById("year");
+    // var numBox = document.getElementById("year2");
+    // var numBox = document.getElementById("year3");
+    // var numBox = document.getElementById("year4");
     window.onload = function() {
         var mySwiper = new Swiper('.swiper-container', {
 
@@ -197,11 +204,47 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-
-
-
         })
+
+
     }
+    var year = 0
+    var caseSum = 0
+    var brand = 0
+    var brandSum = 0
+
+    function numRunFun() {
+        console.log('beat');
+        var n = document.getElementById("numer");
+
+        if (!window.timer) {
+            if (window.innerHeight >= n.getBoundingClientRect().top) {
+                window.timer = window.setInterval(function() {
+
+                    if (year < 19) {
+                        window.year++;
+                        document.getElementById("year").innerText = window.year;
+                    }
+                    if (caseSum < 3000) {
+                        window.caseSum += 150;
+                        document.getElementById("caseSum").innerText = window.caseSum;
+                    }
+                    if (brand < 200) {
+                        window.brand += 10;
+                        document.getElementById("brand").innerText = window.brand;
+                    }
+                    if (brandSum < 200) {
+                        window.brandSum += 10;
+                        document.getElementById("brandSum").innerText = window.brandSum;
+
+                    }
+
+                }, 100);
+            }
+        }
+    }
+
+    window.addEventListener("scroll", numRunFun);
 </script>
 <script>
     var title2 = new Vue({
@@ -244,4 +287,4 @@
     })
 </script>
 
-</html>
+</html>)

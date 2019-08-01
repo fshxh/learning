@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+.root {
+    position: relative;
+}
+
 .header {
     width: 100%;
     height: 90px;
@@ -49,22 +53,24 @@ body {
 }
 
 .b1 {
-    padding: 0%;
-    margin: 0px;
-    background-color: #129bf2;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
 }
 
 .inner2 {
     text-align: center;
     font-size: 30px;
     background-color: white;
-    position: relative;
+    position: absolute;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 456px;
+    margin-left: 150px;
+    z-index: 20;
 }
 
 .column {
-    width: 160px;
+    width: 120px;
     text-align: center;
     display: inline-block;
     color: #999999;
@@ -77,15 +83,32 @@ body {
     color: #333333;
 }
 
-.n3 {
-    margin-top: 0px;
-    margin-left: -290px;
-    width: 200px;
-    height: 29px;
+.b2 {
+    background-image: url("./../images/case_title_bg.png");
+    background-position: center;
+    width: 260px;
+    height: 54px;
+    position: relative;
+    margin: 40px auto;
     text-align: center;
-    font-size: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+.n3 {
+    font-size: 26px;
     color: #333333;
-    position: absolute;
+    line-height: 50px;
+}
+
+.n4 {
+    white-space: nowrap;
+    font-size: 20px;
+    color: #333333;
+    line-height: 50px;
+    justify-content: center;
+    margin: 0 -100px;
+    color: #999999;
 }
 
 .p3 {
@@ -95,12 +118,8 @@ body {
     height: 52px;
 }
 
-.b2 a {
-    text-align: center;
-}
-
 .case-container {
-    margin-top: 150px;
+    margin-top: 1126px;
 }
 
 .case-container .row {
@@ -234,25 +253,28 @@ body {
     padding-top: 150px;
 }
 
-.blue-box .box-item .num {
-    font-size: 60px;
+.blue-box .box-item p {
+    font-size: 45px;
+}
+
+#numBox {
     line-height: 75px;
     color: #ffffff;
     text-align: center;
 }
 
 .blue-box .box-item .box-text {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 75px;
     color: #ffffff;
     text-align: center;
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
 .b8 {
-    background-image: url("./../images/partner_title_bg.png");
-    width: 291px;
-    height: 50px;
+    background-image: url("./../images/service_title_bg.png");
+    width: 237px;
+    height: 54px;
     text-align: center;
     margin: 0 auto;
 }
@@ -260,7 +282,7 @@ body {
 .n7 {
     font-size: 30px;
     margin: 0 auto;
-    margin-top: -20px;
+    margin-top: 80px;
     line-height: 50px;
     cursor: pointer;
 }

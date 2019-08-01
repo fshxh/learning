@@ -68,6 +68,18 @@ body {
     align-items: center;
 }
 
+.search-pic {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.search p {
+    font-family: MicrosoftYaHei;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #666666;
+}
+
 .searcher input {
     background-image: url("../images/search_icon.png");
     background-repeat: no-repeat;
